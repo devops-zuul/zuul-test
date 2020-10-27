@@ -1,11 +1,11 @@
 - job:
-    name: testjob
-    run: playbooks/testjob.yaml
+    name: Test
+    run: playbooks/Test.yaml
 
 - project:
     check:
       jobs:
-        - testjob
+        - Test
         
 - project:
     check:

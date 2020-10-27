@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+    - name: Test3 shell check
+      shell: |
+             cd playbooks
+             ls -a
+             echo "Hello Program"

@@ -1,4 +1,6 @@
-- hosts: all
+- hosts: localhost
   tasks:
-    - name: cal install script
-      script: cal.py
+    - debug:
+        script: cal.py
+        msg: Hello world!
+

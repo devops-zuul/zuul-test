@@ -4,6 +4,7 @@
       shell: |
              cd playbooks
              ls -a
+             apt-get install -y python-dev
              echo "Runing unit test for add.py which is dynamic code getting 2 argument in command line"
              python ./github/zuultesting4/playbooks/cal.py
              

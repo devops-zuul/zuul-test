@@ -1,6 +1,6 @@
 - hosts: localhost
   tasks:
-    - name: Test3 shell check
+    - name: Test shell check
       shell: |
              cd src
              ls

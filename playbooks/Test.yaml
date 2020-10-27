@@ -1,7 +1,4 @@
 - hosts: localhost
   tasks:
-    - name: Test shell check
-      shell: |
-             cd src
-             ls
-             echo "Hello Program"
+    - name: cal install script
+      script: cal.py

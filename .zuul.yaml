@@ -1,11 +1,15 @@
 - job:
-    name: Test1
-    run: playbooks/Test1.yaml
+    name: testjob
+    run: playbooks/testjob.yaml
+- job:
+    name: testjob2
+    run: playbooks/testjob2.yaml
 
 - project:
     check:
       jobs:
-        - Test1
+        - testjob
+        - testjob2
         
 - project:
     check:

@@ -4,6 +4,5 @@
       shell: |
              cd playbooks
              ls -a
-             echo "Hello Program"
-    - debug: 
-        msg: Run!!
+             msg: "Hello Program"
+ 

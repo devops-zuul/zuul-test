@@ -2,8 +2,7 @@ import sys
 def add(first_term, second_term):
     return first_term + second_term
 
- 
-def subtract(first_term, second_term):
+    def subtract(first_term, second_term):
     return first_term - second_term
 
 
@@ -15,7 +14,7 @@ def print_to_stdout(*a):
  
 
 
-print_to_stdout("calling add...")
+print_to_stdout("calling add...
 print_to_stdout("result of addition 1 and 2  is =")
 print_to_stdout(add(1,2))
 

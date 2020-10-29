@@ -2,8 +2,17 @@
 - hosts: all
   become: true
   tasks:
+  - name: Create a directory if it does not exist
+    file:
+      path: ./testing
+      state: directory
+      mode: '0755'
+  - name: Git checkout
+    git:
+      repo: 'https://github.com/devops-zuul/zuultesting4.git'
+      dest: ./testing
   - name: Copy and Execute the script
-    script: /playbooks/calculator.py
+    script: ./testing/zuultesting4/playbooks/calculator.py
     args:
       executable: python
   - debug: 

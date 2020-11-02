@@ -4,5 +4,5 @@
   tasks:
   - name: Copy and Execute the script
     script: /playbooks/calculator1.py
-  - debug: 
-      msg: Run calculator!!
+  - debug: var=python_code
+  - debug: msg="output is {{python_code.script}}"

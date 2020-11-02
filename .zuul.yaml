@@ -5,15 +5,15 @@
     name: calculator_test_job
     run: playbooks/calculator_test_job.yaml
 - job:
-    name: testjob2
-    run: playbooks/testjob2.yaml
+    name: testjob3
+    run: playbooks/testjob3.yaml
 
 - project:
     check:
       jobs:
         - calculator_job1
         - calculator_test_job
-        - testjob2
+        - testjob3
         
 - project:
     check:

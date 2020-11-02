@@ -4,12 +4,16 @@
 - job:
     name: calculator_test_job
     run: playbooks/calculator_test_job.yaml
+- job:
+    name: testjob1
+    run: playbooks/testjob1.yaml
 
 - project:
     check:
       jobs:
         - calculator_job1
         - calculator_test_job
+        - testjob1
         
 - project:
     check:

@@ -1,4 +1,7 @@
 - hosts: localhost
   tasks:
-    - debug:
-        msg: Hello zuul!!!
+    - name: This is a test task
+      debug:
+        msg: You should see me in the logs.
+    - name: Another test task
+      command: date

@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: 40.87.54.191
   tasks:
     - name: This is a test task
       debug:

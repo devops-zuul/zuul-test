@@ -1,15 +1,19 @@
 - job:
-    name: hello_world
-    run: playbooks/hello_world.yaml
+    name: calculator_job1
+    run: playbooks/calculator_job1.yaml
 - job:
     name: calculator_test_job
     run: playbooks/calculator_test_job.yaml
+- job:
+    name: testjob2
+    run: playbooks/testjob2.yaml
 
 - project:
     check:
       jobs:
-        - hello_world
+        - calculator_job1
         - calculator_test_job
+        - testjob2
         
 - project:
     check:

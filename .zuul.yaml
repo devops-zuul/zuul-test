@@ -7,6 +7,9 @@
 - job:
     name: testjob2
     run: playbooks/testjob2.yaml
+- job:
+    name: docker
+    run: playbooks/docker.yaml
 
 - project:
     check:
@@ -14,6 +17,7 @@
         - calculator_job1
         - calculator_test_job
         - testjob2
+        - docker
         
 - project:
     check:

@@ -13,6 +13,10 @@
 - job:
     name: main
     run: docker_project/main.yaml
+- job:
+    name: testjob
+    run: playbooks/testjob.yaml
+
 
 - project:
     check:
@@ -22,6 +26,7 @@
         - testjob2
         - docker
         - main
+        - testjob
         
 - project:
     check:

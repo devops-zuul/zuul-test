@@ -10,13 +10,13 @@
       
     - name: Build Docker image from Dockerfile
       docker_image:
-        name: web
+        name: python:alpine3.7
         path: docker
         state: build
         
     - name: Running the container
       docker_container:
-        image: web:latest
+        image: python:alpine3.7:latest
         path: docker
         state: running
             

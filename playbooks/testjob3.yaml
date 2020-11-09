@@ -1,7 +1,0 @@
-- name: Test date-time lookup
-  hosts: localhost
-  connection: local
-  tasks:
-    - include_vars: ami_vars.yml
-    - debug: msg="ami version is {{ ami_version }}"
-    - debug: msg="ami name is {{ ami_name }}"

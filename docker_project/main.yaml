@@ -1,0 +1,24 @@
+- hosts: webserver
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Install pip
+      apt: name=python-pip state=present
+      
+    - name: install docker-py
+      pip: name=docker-py
+      
+    - name: Build Docker image from Dockerfile
+      docker_image:
+        name: python:alpine3.7
+        path: docker
+        state: build
+        
+    - name: Running the container
+      docker_container:
+        image: python:alpine3.7:latest
+        path: docker
+        state: running
+            
+    - name: Check if container is running
+      shell: docker ps

@@ -8,8 +8,9 @@
     check:
       jobs:
         - testjob
-        
 - project:
     check:
-      jobs:
+      jobs: 
         - noop
+     
+        

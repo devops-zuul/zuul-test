@@ -1,6 +1,8 @@
 - job:
     name: testjob
     run: playbooks/testjob.yaml
+    required-projects:
+      - devops-zuul/anotherproject
 
 
 - project:

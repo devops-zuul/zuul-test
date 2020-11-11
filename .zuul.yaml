@@ -1,15 +1,14 @@
+- project:
+    check:
+      jobs: 
+        - noop
+        - testjob2
+        
 - job:
     name: testjob
     run: playbooks/testjob2.yaml
     required-projects:
       - devops-zuul/anotherproject
 
-- project:
-    check:
-      jobs: 
-        - testjob2
+
         
-- project:
-    check:
-      jobs:
-        - noop

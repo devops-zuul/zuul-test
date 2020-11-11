@@ -21,11 +21,6 @@
 - project:
     check:
       jobs:
-        - calculator_job1
-        - calculator_test_job
-        - testjob2
-        - dockers1
-        - main
         - testjob
         
 - project:

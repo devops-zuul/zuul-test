@@ -1,13 +1,31 @@
 - job:
+    name: calculator_job1
+    run: playbooks/calculator_job1.yaml
+- job:
+    name: calculator_test_job
+    run: playbooks/calculator_test_job.yaml
+- job:
+    name: testjob2
+    run: playbooks/testjob2.yaml
+- job:
+    name: dockers1
+    run: playbooks/dockers1.yaml
+- job:
+    name: main
+    run: docker_project/main.yaml
     name: testjob
     run: playbooks/testjob.yaml
     required-projects:
       - devops-zuul/anotherproject
 
-
 - project:
     check:
       jobs:
+        - calculator_job1
+        - calculator_test_job
+        - testjob2
+        - dockers1
+        - main
         - testjob
         
 - project:

@@ -1,13 +1,13 @@
 - job:
-    name: testjob3
-    run: playbooks/testjob3.yaml
+    name: testjob2
+    run: playbooks/testjob2.yaml
     required-projects:
       - devops-zuul/anotherproject
 
 - project:
     check:
       jobs:
-        - testjob3
+        - testjob2
 - project:
     check:
       jobs: 

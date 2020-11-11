@@ -2,3 +2,5 @@
   tasks:
     - debug:
         msg: Hello world!!!!!!!!
+    - name: List projects
+      shell: ls src/*/*

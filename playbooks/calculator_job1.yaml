@@ -1,8 +1,6 @@
----
 - hosts: all
   become: true
   tasks:
   - name: Copy and Execute the script
     script: /playbooks/calculator1.py
-  - debug: 
-      msg: Run calculator!!
+  

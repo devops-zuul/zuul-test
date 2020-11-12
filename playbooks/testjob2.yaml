@@ -2,7 +2,7 @@
   tasks:
     - name: This is a test task
       debug:
-        msg: You should see me in the logs and date.
+        msg: You should see me in the logs.
     - debug: var=ansible_date_time
     - debug: msg="the current date is {{ ansible_date_time.date }}"
    

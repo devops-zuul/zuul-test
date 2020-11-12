@@ -1,6 +1,4 @@
 - hosts: localhost
   tasks:
     - debug:
-        msg: Hello world!!!!!!!!
-    - name: List projects
-      shell: ls src/*/*
+        msg: Hello world

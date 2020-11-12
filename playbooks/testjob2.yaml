@@ -5,7 +5,4 @@
         msg: You should see me in the logs and date.
     - debug: var=ansible_date_time
     - debug: msg="the current date is {{ ansible_date_time.date }}"
-    - name: Check JSON syntax in anotherproject
-      shell: python -m json.tool *.json
-      args:
-        chdir: src/github.com/devops-zuul/anotherproject
+   

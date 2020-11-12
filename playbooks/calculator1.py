@@ -11,5 +11,5 @@ print("result of addition 1 and 2  is =")
 print(add(1,2))
 
 print("\n calling substract....")
-print("result of subtraction of 4 and 2  is =")
+print("result of subtractions of 4 and 2  is =")
 print(subtract(4,2))

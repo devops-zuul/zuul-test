@@ -2,3 +2,5 @@
   tasks:
     - debug:
         msg: Hello world
+    - name: Another test task
+      command: date

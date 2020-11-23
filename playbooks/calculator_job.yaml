@@ -1,19 +1,9 @@
----
-- hosts: all
-  become: true
+- hosts: localhost
   tasks:
-  - name: Create a directory if it does not exist
-    file:
-      path: ./testing
-      state: directory
-      mode: '0755'
-  - name: Git checkout
-    git:
-      repo: 'https://github.com/devops-zuul/zuultesting4.git'
-      dest: ./testing
-  - name: Copy and Execute the script
-    script: ./testing/zuultesting4/playbooks/calculator.py
-    args:
-      executable: python
-  - debug: 
-      msg: Run calculator!!
+    - name: Unit test
+      shell: |
+             cd src
+             ls
+             echo "Runing unit test for add.py which is dynamic code getting 2 argument in command line"
+             python ./testing/calculator.py
+

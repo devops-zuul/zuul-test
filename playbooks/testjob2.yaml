@@ -1,4 +1,6 @@
-- hosts: all
+- name: Run Ansible playbook
+  uses: dawidd6/action-ansible-playbook@v2.1.2
+- hosts: localhost
   tasks:
     - name: This is a test task
       debug:

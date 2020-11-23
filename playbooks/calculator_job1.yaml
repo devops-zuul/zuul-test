@@ -1,6 +1,8 @@
-- hosts: all
-  become: true
+- hosts: localhost
   tasks:
-  - name: Copy and Execute the script
-    script: /playbooks/calculator1.py
-  
+    - name: Unit test
+      shell: |
+             cd src
+             ls
+             echo "Runing unit test for add.py which is dynamic code getting 2 argument in command line"
+             python ./playbook/calculator.py

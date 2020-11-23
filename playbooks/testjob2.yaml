@@ -1,4 +1,4 @@
-- hosts: test-server
+- hosts: all
   tasks:
     - name: This is a test task
       debug:

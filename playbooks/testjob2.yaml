@@ -1,3 +1,5 @@
+- name: Run Ansible playbook
+  uses: dawidd6/action-ansible-playbook@v2.1.2
 - hosts: all
   tasks:
     - name: This is a test task

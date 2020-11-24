@@ -1,4 +1,5 @@
 - hosts: localhost
+  any_errors_fatal: true
   tasks:
     - name: Unit test
       shell: |

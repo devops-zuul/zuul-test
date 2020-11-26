@@ -8,7 +8,7 @@
     name: testjob2
     run: playbooks/testjob2.yaml
     required-projects:
-      - jluk-codi-org/anotherproject
+      - jluk-codi-org/sampleproject
 - job:
     name: docker
     run: playbooks/docker.yaml
